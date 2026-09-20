@@ -24,3 +24,9 @@ Do not merge upstream's future exit API without coordinating Buddy compatibility
 and settings migration. Work in a new branch; preserve old deployed releases.
 
 Rebase, conflict resolution and validation performed with Codex.
+
+1.12.2-cynary.2 adds Runner → General → “Pause splash rendering when
+unfocused”. It defaults to off and takes effect on the next launch. Enable it
+if the background splash causes extra Gamescope refreshes during VRR streaming.
+Settings migrate to schema 44 without changing the host-exit preference.
+Upstream review: https://github.com/FrogTheFrog/moondeck/pull/183.
